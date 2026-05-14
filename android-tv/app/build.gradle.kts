@@ -1,11 +1,11 @@
 plugins {
-    id("com.android.application") version "8.2.0"
-    id("org.jetbrains.kotlin.android") version "1.9.22"
+    id("com.android.application") version "7.4.2"
+    id("org.jetbrains.kotlin.android") version "1.8.22"
 }
 
 val defaultKVideoUrl = providers
     .gradleProperty("kvideoUrl")
-    .orElse("")
+    .orElse("http://tvbox.xn--4kq62z5rby2qupq9ub.top/")
     .get()
     .replace("\\", "\\\\")
     .replace("\"", "\\\"")
